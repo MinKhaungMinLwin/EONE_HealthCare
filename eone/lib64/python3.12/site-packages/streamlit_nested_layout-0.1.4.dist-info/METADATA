@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: streamlit-nested-layout
+Version: 0.1.4
+Summary: Enables nested layout in streamlit.
+Home-page: https://github.com/joy13975/streamlit-nested-layout
+Author: Joy Yeh
+Author-email: joyyeh.tw@gmail.com
+License: Apache 2.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7, !=3.9.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: streamlit >=1.10.0
+
+
+# streamlit-nested-layout
+An unofficial monkey patch that enables [streamlit](https://github.com/streamlit/streamlit) columns and expanders to be nested.
+
+```diff
+- ⚠️Streamlit developers disallow this behavior by design, so you are on your own if you encounter issues using this package!⚠️
+```
+
+Last tested for `streamlit==1.39.0` on `Python 3.9.18`.
+
+Credits to [streamlit PR #5266](https://github.com/streamlit/streamlit/pull/5266) by [@ZeroCool940711](https://github.com/ZeroCool940711).
+
+### Install
+```
+pip install streamlit-nested-layout
+```
+
+### Usage
+Just import this package once in your app.
+
+```
+import streamlit_nested_layout
+```
+
+### Demo
+![Demo](https://raw.githubusercontent.com/joy13975/streamlit-nested-layout/main/images/demo.png)
